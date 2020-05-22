@@ -1,0 +1,142 @@
+/* BIG SCREENS */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+h1, h2 { 
+  margin: 0px; 
+}
+
+/* Header/logo title */
+.header {
+  padding: 100px;
+  height: auto;
+  text-align: center;
+  background-image: url("coding.jpg");
+  background-size: 110%;
+  background-repeat: no-repeat;
+  color: white;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* style the navigation bar */
+.navbar {
+  background-color: #333;
+  color:#333;
+  flex-grow: 1;
+  padding: 10px;
+}
+
+/* style the navbar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* changing color when you mouse over */
+.navbar a:hover {
+  background-color:#333;
+  color: aqua;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; 
+  width: 100%;
+  list-style: none;
+}
+
+/* column container */
+.row {  
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+/* sidebar/left column */
+.side {
+  flex: 1 1 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* my picture */
+.myImg {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  border-radius: 8px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border: 2px solid #333;
+}
+
+/* Main column */
+.main {   
+  flex: 1 1 70%;
+  background-color: white;
+  padding: 20px;
+  text-align: justify;
+}
+
+.containerTitle {
+  border: 3px solid #333;
+  margin: 10px;
+  border-radius: 8px;
+  background-color: #333;
+  color: white;
+  padding: 25px;
+}
+
+.title {
+  text-align: center;
+  font-size: 28px;
+}
+
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background-color: #333;
+}
+
+
+
+/* MEDIUM SCREEN */
+@media screen and (max-width: 500px) {
+  .side {   
+    flex-direction: column;
+    flex: 1 1 70%;
+  } 
+
+  .myImg {
+    /* align-content: center; */
+    /* flex-direction: center; */
+    flex: 1 1 70%;
+  }
+
+}
+
+/*SMALL SCREEN*/
+@media screen and (max-width: 300px) {
+  /* .navbar a {
+    float: none;
+    width: 100%;
+    flex-grow: 1;
+  } */
+
+}
+
+
